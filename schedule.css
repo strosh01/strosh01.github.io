@@ -19,10 +19,11 @@ td{
   border-color:#cc936b;
   border-style:solid;
   border-width:1px;
+  background-color:#e6c89c;
 }
 .break{
   border-color:#ffdead;
   border-width:1px;
   border-style:solid;
-  background-color:#e6c89c;
+  background-color:#ffdead;
 }
