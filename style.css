@@ -1,5 +1,7 @@
-p{
- padding-right:12cm;
+#b{
+ position:relative;
+ left:500px;
+ width:100px;
 }
 body{
   background-color:#ffdead;
