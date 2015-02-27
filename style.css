@@ -24,8 +24,8 @@ td{
   border-width:1px;
 }
 footer{
- margin:5px;
  position:fixed;
  bottom:3px;
+ padding:5px;
  background-color:#ffdead;
 }
