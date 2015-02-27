@@ -21,7 +21,7 @@ td{
 }
 footer{
   background-color:#ffdead;
-  margin:0px;
+  bottom:0px;
   display:fixed;
   padding:5px;
 }
