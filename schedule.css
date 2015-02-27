@@ -20,5 +20,8 @@ td{
   background-color:#ffdead;
 }
 footer{
-  margin:5px;
+  background-color:#ffdead;
+  margin:0px;
+  display:fixed;
+  padding:5px;
 }
