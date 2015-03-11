@@ -5,10 +5,10 @@
 <body>
  <h1>BMI Calculator</h1>
  <label for="h">Height</label>
- <input type="range" id="h" value="0" min="0" max="300" onmouseup="showvalues();">
+ <input type="range" id="h" value="0" min="0" max="300" onmouseup="showValues()">
  <span id="hd"></span>
  <label for="w">Weight</label>
- <input type="range" id="w" value="0" min="0" max="75" onmouseup="showvalues();">
+ <input type="range" id="w" value="0" min="0" max="75" onmouseup="showValues()">
  <span id="wd"></span>
  <button onclick="calculate();">Calculate</button>
  <h3 id="answer"></h3>
@@ -26,7 +26,7 @@
    document.querySelector('#hd').innerHTML = document.querySelector("#h").value;
    document.querySelector('#wd').innerHTML = document.querySelector("#w").value;
   }
-  window.onLoad=showvalues();
+  window.onLoad=showValues();
  </script>
  <footer>
   <i><b>Links</b></i>
