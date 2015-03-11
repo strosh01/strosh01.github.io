@@ -4,9 +4,17 @@
 </head>
 <body>
  <h1>BMI Calculator</h1>
- <input type="text" value="Height" size="20">
- <input type="text" value="Weight" size="20">
+ <input type="range" id="h" value="0" min="0" max="300">
+ <input type="text" id="w" value="0" min="0" max="75">
  <button onclick="calculate();">Calculate</button>
+ 
+ <script>
+  calculate = function() {
+   height=document.querySelector('#h')
+   weight=document.querySelector('#w')
+   
+  }
+ </script>
  <footer>
   <i><b>Links</b></i>
   <br>
