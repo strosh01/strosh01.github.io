@@ -4,11 +4,12 @@
 </head>
 <body>
  <h1>BMI Calculator</h1>
- <h4>Height        Weight</h4>
- <input type="range" id="h" value="0" min="0" max="300">
- 
- <input type="range" id="w" value="0" min="0" max="75">
- 
+ <label for="h">Height</label>
+ <label for="w">Weight</label>
+ <input type="range" id="h" value="0" min="0" max="300" onmouseup="showvalues();">
+ <span id="hd"></span>
+ <input type="range" id="w" value="0" min="0" max="75" onmouseup="showvalues();">
+ <span id="wd"></span>
  <button onclick="calculate();">Calculate</button>
  <h3 id="answer"></h3>
  <script>
@@ -21,6 +22,11 @@
    bmi=(weight*703)/(height*height)
    document.getElementById("answer").innerHTML=bmi;
   }
+  showValues=function() {
+   document.querySelector('#hd').innerHTML = document.querySelector("#h").value;
+   document.querySelector('#wd').innerHTML = document.querySelector("#w").value;
+  }
+  window.onLoad=showvalues();
  </script>
  <footer>
   <i><b>Links</b></i>
