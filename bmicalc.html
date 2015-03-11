@@ -11,19 +11,19 @@
  <label for="w">Weight</label>
  <input type="range" id="w" value="0" min="0" max="75" onmouseup="showValues()">
  <span id="wd"></span>
- <button onclick="calculate();">Calculate</button>
+ <button onclick="calculate()">Calculate</button>
  <h3 id="answer"></h3>
  <script>
-  calculate = function() {
-   var height;
-   var weight;
+  calculate=function(){
+   var hv;
+   var wv;
    var bmi;
    hv=document.querySelector('#h');
    wv=document.querySelector('#w');
    bmi=(wv*703)/(hv*hv);
    document.getElementById("answer").innerHTML=bmi;
   }
-  showValues=function() {
+  showValues=function(){
    document.querySelector('#hd').innerHTML = document.querySelector("#h").value;
    document.querySelector('#wd').innerHTML = document.querySelector("#w").value;
   }
