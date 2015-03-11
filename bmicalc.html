@@ -5,13 +5,20 @@
 <body>
  <h1>BMI Calculator</h1>
  <input type="range" id="h" value="0" min="0" max="300">
+ 
  <input type="range" id="w" value="0" min="0" max="75">
+ 
  <button onclick="calculate();">Calculate</button>
+ <h3 id="answer"></h3>
  <script>
   calculate = function() {
+   var height;
+   var weight;
+   var bmi;
    height=document.querySelector('#h')
    weight=document.querySelector('#w')
    bmi=(weight*703)/(height*height)
+   document.getElementById("answer").innerHTML=bmi;
   }
  </script>
  <footer>
