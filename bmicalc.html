@@ -7,12 +7,11 @@
  <input type="range" id="h" value="0" min="0" max="300">
  <input type="range" id="w" value="0" min="0" max="75">
  <button onclick="calculate();">Calculate</button>
- 
  <script>
   calculate = function() {
    height=document.querySelector('#h')
    weight=document.querySelector('#w')
-   
+   bmi=(weight*703)/(height*height)
   }
  </script>
  <footer>
