@@ -11,15 +11,13 @@
  <label for="w">Weight</label>
  <input type="range" id="w" value="0" min="0" max="75" onmouseup="showValues()">
  <span id="wd"></span>
+ <br>
  <button onclick="calculate()">Calculate</button>
  <h3 id="answer"></h3>
  <script>
   calculate=function(){
-   var hv;
-   var wv;
-   var bmi;
-   hv=document.querySelector('#h');
-   wv=document.querySelector('#w');
+   hv=document.querySelector('#h').value;
+   wv=document.querySelector('#w').value;
    bmi=(wv*703)/(hv*hv);
    document.getElementById("answer").innerHTML=bmi;
   }
