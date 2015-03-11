@@ -5,11 +5,11 @@
 <body>
  <h1>BMI Calculator</h1>
  <label for="h">Height</label>
- <input type="range" id="h" value="0" min="0" max="85" onmousemove="showValues()">
+ <input type="range" id="h" value="0" min="0" max="85" onmouseup="showValues()">
  <span id="hd"></span>
  <br>
  <label for="w">Weight</label>
- <input type="range" id="w" value="0" min="0" max="300" onmousemove="showValues()">
+ <input type="range" id="w" value="0" min="0" max="300" onmouseup="showValues()">
  <span id="wd"></span>
  <br>
  <button onclick="calculate()">Calculate</button>
