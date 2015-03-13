@@ -23,15 +23,15 @@
    document.getElementById("answer").innerHTML=bmi;
    if(bmi<19) {
     document.querySelector('#color').innerHTML="Too Low"
-    document.querySelector('#color').style.color=red
+    document.querySelector('#color').style.color="red"
    }
    if(bmi>24) {
     document.querySelector('#color').innerHTML="Too High"
-    document.querySelector('#color').style.color=red
+    document.querySelector('#color').style.color="red"
    }
    if(bmi>19 && bmi<24) {
     document.querySelector('#color').innerHTML="Healthy"
-    document.querySelector('#color').style.color=green
+    document.querySelector('#color').style.color="green"
    }
   }
   showValues = function() {
