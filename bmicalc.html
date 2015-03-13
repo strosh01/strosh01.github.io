@@ -14,12 +14,25 @@
  <br>
  <button onclick="calculate()">Calculate</button>
  <h3 id="answer"></h3>
+ <h3 id="color"></h3>
  <script>
   calculate=function(){
    hv=document.querySelector('#h').value;
    wv=document.querySelector('#w').value;
    bmi=(wv*703)/(hv*hv);
    document.getElementById("answer").innerHTML=bmi;
+   if(bmi<19) {
+    document.querySelector('#color').innerHTML="Too Low"
+    document.querySelector('#color').style.color=red
+   }
+   if(>24) {
+    document.querySelector('#color').innerHTML="Too High"
+    document.querySelector('#color').style.color=red
+   }
+   if(bmi>19 && bmi<24) {
+    document.querySelector('#color').innerHTML="Healthy"
+    document.querySelector('#color').style.color=green
+   }
   }
   showValues=function(){
    document.querySelector('#hd').innerHTML = document.querySelector("#h").value;
