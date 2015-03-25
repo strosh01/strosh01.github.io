@@ -9,11 +9,10 @@
  <script>
    addToList = function() {
      thelist=document.querySelector("#todo");
+     newitem=document.createElement("li");
      newevent=document.createElement("input");
      newevent.type="checkbox";
-     newevent.innerHTML=document.querySelector("#eventnew").value;
-     newitem=document.createElement("li");
-     newitem.innerHTML=newevent;
+     newitem.appendChild(newevent);
      thelist.appendChild(newitem);
    }
  </script>
