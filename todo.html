@@ -14,6 +14,7 @@
      newevent=document.createElement("input");
      newevent.type="checkbox";
      newevent.value=eventname;
+     newevent.innerHTML=eventname;
      newitem.appendChild(newevent);
      thelist.appendChild(newitem);
      document.querySelector("#eventnew").value=""
