@@ -4,11 +4,17 @@
  </head>
  <body>
    <input id="eventnew" type="text" size="40">
-   <button id="addbutton">Add</button>
+   <button onclick="addToList();">Add</button>
    <ul id="todo"></ul>
  <script>
    addToList = function() {
-     
+     thelist=document.querySelector("#todo");
+     newevent=document.createElement("input");
+     newevent.type="checkbox";
+     newevent.innerHTML=document.querySelector("#eventnew").value;
+     newitem=document.createElement("li");
+     newitem.innerHTML=newevent;
+     thelist.appendChild(newitem);
    }
  </script>
  </body>
