@@ -22,11 +22,11 @@
      newevent.type="checkbox";
      newevent.innerHTML=eventname.value;
      if(eventprio.value=="High"){
-      newitem.color="red";
+      newitem.style.color="red";
      } else if(eventprio.value=="Medium"){
-      newitem.color="orange";
+      newitem.style.color="orange";
      } else {
-      newitem.color="blue";
+      newitem.style.color="blue";
      }
      newitem.appendChild(newevent);
      thelist.appendChild(newitem);
