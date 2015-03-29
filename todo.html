@@ -6,9 +6,9 @@
   <h1>To-Do List</h1>
    <input id="eventnew" type="text" size="40">
    <select id="priority">
-    <option>High</option>
-    <option>Medium</option>
     <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
    </select>
    <button onclick="addToList()">Add</button>
    <ul id="todo" style="list-style-type:none"></ul>
@@ -16,12 +16,21 @@
    addToList = function() {
      thelist=document.querySelector("#todo");
      eventname=document.querySelector("#eventnew");
+     eventprio=document.querySelector("#priority");
      newitem=document.createElement("li");
      newevent=document.createElement("input");
      newevent.type="checkbox";
      newevent.innerHTML=eventname.value;
+     if(eventprio.value=="High"){
+      newitem.color="red";
+     } else if(eventprio.value=="Medium"){
+      newitem.color="orange";
+     } else {
+      newitem.color="blue";
+     }
      newitem.appendChild(newevent);
      thelist.appendChild(newitem);
+     document.querySelector("#eventnew").value="";
    }
  </script>
  </body>
