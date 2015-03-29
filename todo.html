@@ -10,7 +10,8 @@
  <script>
    addToList = function() {
      thelist=document.querySelector("#todo");
-     eventname=document.querySelector("#eventnew").value;
+     event=document.querySelector("#eventnew").value;
+     eventname=event.innerHTML;
      newitem=document.createElement("li");
      newevent=document.createElement("input");
      newevent.type="checkbox";
