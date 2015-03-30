@@ -13,24 +13,25 @@
    <button onclick="addToList()">Add</button>
    <ul id="todo" style="list-style-type:none"></ul>
  <script>
-   addToList = function() {
-     thelist=document.querySelector("#todo");
-     eventname=document.querySelector("#eventnew");
-     eventprio=document.querySelector("#priority");
-     newitem=document.createElement("li");
-     newevent=document.createElement("input");
-     newevent.type="checkbox";
-     newevent.innerHTML=eventname.value;
-     if(eventprio.value=="High"){
-      newitem.style.color="red";
-     } else if(eventprio.value=="Medium"){
-      newitem.style.color="orange";
-     } else {
-      newitem.style.color="blue";
-     }
-     newitem.appendChild(newevent);
-     thelist.appendChild(newitem);
-     document.querySelector("#eventnew").value="";
+ addToList = function(){
+   thelist=document.querySelector("#todo");
+   eventprio=document.querySelector("#priority");
+   eventname=document.querySelector("#eventnew");
+   newevent=document.createElement("input");
+   newevent.type="checkbox";
+   newtext=document.createTextNode(eventname.value);
+   newitem=document.createElement("li");
+   if(eventprio.value=="High"){
+    newitem.style.color="red";
+   } else if(eventprio.value=="Medium"){
+    newitem.style.color="orange";
+   } else {
+    newitem.style.color="blue";
+   }
+   newitem.appendChild(newevent);
+   newitem.appendChild(newtext);
+   thelist.appendChild(newitem);
+   document.querySelector("#eventnew").value="";
    }
  </script>
  </body>
