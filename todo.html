@@ -19,7 +19,7 @@
    eventname=document.querySelector("#eventnew");
    newevent=document.createElement("input");
    newevent.type="checkbox";
-   newevent.class=".event";
+   newevent.onclick="checkedOff()";
    newtext=document.createTextNode(eventname.value);
    newitem=document.createElement("li");
    if(eventprio.value=="High"){
@@ -34,10 +34,9 @@
    thelist.appendChild(newitem);
    document.querySelector("#eventnew").value="";
    }
-   checks=getElementsByClassName(".event");
-   if(checks.checked==true){
-    checks.firstChild.style.text-decoration="line-through"
-   }
+ checkedOff = function(){
+  
+ }
  </script>
  </body>
   <footer>
