@@ -24,7 +24,7 @@
    if(eventprio.value=="High"){
     newitem.style.color="red";
    } else if(eventprio.value=="Medium"){
-    newitem.style.color="orange";
+    newitem.style.color="green";
    } else {
     newitem.style.color="blue";
    }
@@ -33,12 +33,6 @@
    thelist.appendChild(newitem);
    document.querySelector("#eventnew").value="";
    }
- checkedOff = function(){
-  checks=document.getElementsByTagName("input");
-  if(checks.checked==true){
-   checks.firstChild.style.textDecoration="line-through";
-  }
- }
  </script>
  </body>
   <footer>
