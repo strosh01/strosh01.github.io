@@ -19,7 +19,7 @@
    eventname=document.querySelector("#eventnew");
    newevent=document.createElement("input");
    newevent.type="checkbox";
-   newevent.onclick="checkedOff()";
+   newevent.onclick="checkedOff(this)";
    newtext=document.createTextNode(eventname.value);
    newitem=document.createElement("li");
    if(eventprio.value=="High"){
@@ -34,8 +34,8 @@
    thelist.appendChild(newitem);
    document.querySelector("#eventnew").value="";
    }
- checkedOff = function(){
-  alert("You did it!")
+ checkedOff = function(this){
+  this.firstChild.style.textDecoration="line-through";
  }
  </script>
  </body>
