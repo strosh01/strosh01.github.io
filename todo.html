@@ -19,6 +19,7 @@
    eventname=document.querySelector("#eventnew");
    newevent=document.createElement("input");
    newevent.type="checkbox";
+   newevent.class=".event";
    newtext=document.createTextNode(eventname.value);
    newitem=document.createElement("li");
    if(eventprio.value=="High"){
@@ -32,6 +33,10 @@
    newitem.appendChild(newtext);
    thelist.appendChild(newitem);
    document.querySelector("#eventnew").value="";
+   }
+   checks=getElementsByClassName(".event");
+   if(checks.checked==true){
+    checks.firstChild.style.text-decoration="line-through"
    }
  </script>
  </body>
